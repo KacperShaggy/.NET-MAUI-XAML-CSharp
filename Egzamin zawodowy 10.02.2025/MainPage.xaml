@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DomekWGorach.MainPage">
+
+
+    <VerticalStackLayout Padding="0,20,0,0">
+        <Label Text="Domek w górach"
+               TextColor="#808080"
+               FontSize="30"/>
+        <Image>
+            <Image.Source>
+                <FileImageSource File="dotnet_bot.png"/>
+            </Image.Source>
+        </Image>
+        <HorizontalStackLayout BackgroundColor="#008080">
+            <Button Text="POLUB"
+                    x:Name="buttonLike"
+                    Clicked="buttonLike_Clicked"
+                    BackgroundColor="#008080"
+                    TextColor="White"/>
+            <Button Text="USUŃ"
+                    x:Name="buttonDislike"
+                    Clicked="buttonDislike_Clicked"
+                    BackgroundColor="#008080"
+                    TextColor="White"/>
+            <Button Text="ZAPISZ"
+                    BackgroundColor="#008080"
+                    TextColor="White"/>
+        </HorizontalStackLayout>
+        <Label Text="0 polubień"
+               x:Name="labelCounter"
+               HorizontalOptions="End"
+               TextColor="#808080"/>
+
+        <Line Stroke="#808080"
+              StrokeThickness="1"
+              X2="500"
+              />
+        <Label Text="Opis"
+               TextColor="#808080"
+               FontAttributes="Bold"/>
+        <Label Text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych"
+               TextColor="#808080"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>
