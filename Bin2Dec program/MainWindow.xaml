@@ -1,0 +1,36 @@
+﻿<Window x:Class="BinaryConverterWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Binary Converter" Height="200" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <CheckBox x:Name="cb0" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb1" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb2" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb3" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb4" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb5" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb6" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb7" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb8" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb9" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb10" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb11" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb12" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb13" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb14" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="cb15" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <Button Content="Reset" Click="Reset_Click" Margin="10,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <TextBox x:Name="txtBinary" Width="100" TextChanged="TxtBinary_TextChanged"/>
+                <ComboBox x:Name="cmbConversion" Width="100" SelectionChanged="CmbConversion_SelectionChanged">
+                    <ComboBoxItem Content="Bin2Dec"/>
+                    <ComboBoxItem Content="Bin2Hex"/>
+                </ComboBox>
+                <TextBox x:Name="txtConverted" Width="100" IsReadOnly="True" TextChanged="TxtBinary_TextChanged"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
