@@ -2,13 +2,23 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        public List<string> Animals { get; set; } = new List<string> { "Pies", "Kot", "Świnka morska" };
+        private string animalTapped = "";
+
+        public string User { get; set; } = "Kacper Kudła";
 
         public MainPage()
         {
-            InitializeComponent();
+            BindingContext = this;
+            -InitializeComponent();
         }
 
+        private void okButton_Clicked(object sender, EventArgs e)
+        {
+            
+        }
+
+       
     }
 
 }
