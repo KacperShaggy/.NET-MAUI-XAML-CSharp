@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿ ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Egz_zaw.MainPage">
@@ -7,23 +7,19 @@
         <Label Text="Wizyta u weterynarza"></Label>
         <Entry Placeholder="Imie i nazwisko właściciela"></Entry>
         <Label Text="Gatunek"></Label>
-        <ListView>
-            <ListView.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Pies</x:String>
-                    <x:String>Kot</x:String>
-                    <x:String>Świnka morska</x:String>
-                </x:Array>
-            </ListView.ItemsSource>
+        <ListView ItemsSource="{Binding Animals}"
+                  x:Name="animalsList"
+                  ItemTapped="animalList_ItenTapped">
         </ListView>
-        <Label>Ile ma lat? 0</Label>
-        <Slider Minimum="0" Maximum="20"></Slider>
+        <HorizontalStackLayout>
+                <Label>Ile ma lat? 0</Label>
+                <Slider Minimum="0" Maximum="20"></Slider>
+            </HorizontalStackLayout>
         <Entry Placeholder="Cel wizyty"></Entry>
+        <TimePicker Time ="16:00" />
+        <Button Text="OK" Clicked="okButton_Clicked"></Button>
+        <Label Text="{Binding User}"></Label>
         
-        
-
-
-
     </VerticalStackLayout>
 
 </ContentPage>
