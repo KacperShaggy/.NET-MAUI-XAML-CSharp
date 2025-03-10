@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+
+    <VerticalStackLayout x:Name ="Container"  WidthRequest="200" HeightRequest="200" VerticalOptions="Center" HorizontalOptions="Center">
+            <Slider x:Name="Red"></Slider>
+            <Slider x:Name="Green"></Slider>
+            <Slider x:Name="Blue"></Slider>
+            <Button Text="Random Color" x:Name="randomButton"></Button>
+            <Label x:Name="labelHex"></Label>
+    </VerticalStackLayout>
+
+</ContentPage>
