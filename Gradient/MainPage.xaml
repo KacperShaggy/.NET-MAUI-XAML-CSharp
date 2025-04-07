@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gradient.MainPage">
+
+    <Grid RowDefinitions="10., *">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0"
+                                 EndPoint="1,1"
+                                 x:Name="gradientB">
+                <GradientStop Color="Aqua"
+                              Offset="0.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Frame Grid.Row="1" HeightRequest="30px" >
+            <Button Text="Change Gradient" Clicked="Button_Clicked"/>
+        </Frame>
+    </Grid>
+
+</ContentPage>
+
